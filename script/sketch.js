@@ -39,9 +39,11 @@ function raveTime() {
       crabRave.play();
       crabRaveMode = 1;
       print("crab time");
+      img = loadImage("assets/Crab.png");
     } else if (crabRaveMode === 1) {
       crabRaveMode = 0;
       print("crab end");
+      img = loadImage("assets/Carrot.png");
       crabRave.pause();
     }
   }
