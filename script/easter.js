@@ -36,9 +36,9 @@ function easterTime(){
            }
        }else if(keyS==5){
            if(keyCode===13)
-        keyS=0
-        keyCode=0
-        img=loadImage("assets/egg.png")
+                keyS=0
+                keyCode=0
+                img=loadImage("assets/egg.png")
        }else if(keyCode==0){}else{
            keyCode = 0
        }
