@@ -22,6 +22,7 @@ function draw() {
   background(0);
   movement();
   raveTime();
+  easterTime();
 }
 
 function sketch() {
