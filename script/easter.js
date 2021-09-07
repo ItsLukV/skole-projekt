@@ -37,7 +37,7 @@ function easterTime(){
            if(keyCode===13)
         key=0
         keyCode=0
-        img=loadImage("egg.png")
+        img=loadImage("assets/egg.png")
        }else if(keyCode==0){}else{
            keyCode = 0
        }
