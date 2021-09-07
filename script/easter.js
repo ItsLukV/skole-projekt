@@ -39,6 +39,7 @@ function easterTime(){
                keyS=0
                keyCode=0
                img=loadImage("assets/egg.png")
+               print("easter time")
            }else if(keyCode==0){}else{
            keyS = 0
            }
