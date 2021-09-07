@@ -30,7 +30,7 @@ function movement() {
   shape(x, y);
   if (crabRaveMode === 0) {
   } else if (crabRaveMode === 1) {
-    RGB = [rando] += random(10, 100);
+    RGB = [rando] + random(10, 100);
     G += random(10, 100);
     B += random(10, 100);
     background(R, G, B);
