@@ -39,9 +39,9 @@ function easterTime(){
                keyS=0
                keyCode=0
                img=loadImage("assets/egg.png")
+           }else if(keyCode==0){}else{
+           keyS = 0
            }
-       }else if(keyCode==0){}else{
-           keyCode = 0
        }
     }
 }
