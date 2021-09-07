@@ -1,41 +1,42 @@
+var keyS = 0
 function easterTime(){
     if(keyIsPressed === true){
-        if(key==0){
+        if(keyS==0){
             if(keyCode === 69){
-                key = 1
+                keyS = 1
                 keyCode = 0
             }else if(keyCode==0){}else{
-                key = 0
+                keyS = 0
             }
-       }else if(key==1){
+       }else if(keyS==1){
            if(keyCode=== 83){
-               key = 2
+               keyS = 2
                keyCode = 0
            }else if(keyCode==0){}else{
-            key = 0
+            keyS = 0
         }
-       }else if(key==2){
+       }else if(keyS==2){
            if(keyCode===84){
-               key=3
+               keyS=3
                keyCode=0
            }else if(keyCode==0){}else{
-            key = 0
+            keyS = 0
         }
-       } else if(key==3){
+       } else if(keyS==3){
            if(keyCode===69){
-               key = 4
+               keyS = 4
                keycode=0
            }else if(keyCode==0){}else{
-            key = 0
+            keyS = 0
         }
-       }else if(key==4){
+       }else if(keyS==4){
            if(keyCode===82){
-               key=5
+               keyS=5
                keyCode=0
            }
-       }else if(key==5){
+       }else if(keyS==5){
            if(keyCode===13)
-        key=0
+        keyS=0
         keyCode=0
         img=loadImage("assets/egg.png")
        }else if(keyCode==0){}else{
