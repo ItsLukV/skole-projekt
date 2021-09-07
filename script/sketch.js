@@ -7,6 +7,7 @@ function preload() {
   y = random(101, windowHeight - 101);
   canvas_x = windowWidth;
   canvas_y = windowHeight;
+  console.log("ready");
 }
 
 function setup() {
@@ -14,6 +15,7 @@ function setup() {
   crabRave = loadSound("assets/CrabRave.mp3");
   createCanvas(canvas_x, canvas_y);
   frameRate(50);
+  console.log("ready");
 }
 
 function draw() {
@@ -22,8 +24,9 @@ function draw() {
   raveTime();
 }
 
-function sketch() {}
-//gaming
+function sketch() {
+  print("gaming");
+}
 
 function shape(x, y) {
   image(img, x, y, 100, 100);
@@ -32,12 +35,14 @@ function shape(x, y) {
 function raveTime() {
   if (mouseIsPressed) {
     mouseIsPressed = false;
-    crabRave.play();
-    crabRaveMode == 1;
     if (crabRaveMode === 0) {
-      crabRaveMode == 1;
+      crabRave.play();
+      crabRaveMode = 1;
+      print("crab time");
     } else if (crabRaveMode === 1) {
       crabRaveMode = 0;
+      print("crab end");
+      crabRave.pause();
     }
   }
 }

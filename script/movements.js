@@ -2,7 +2,7 @@ var x;
 var y;
 var xx = 1;
 var yy = 1;
-var RGB;
+
 function movement() {
   //moving down
   if (x + xx < 0) {
@@ -27,13 +27,6 @@ function movement() {
     y += yy;
   }
   background(x + 50 * (255 / canvas_x), y + 50 * (255 / canvas_y), 0);
+  colorShift();
   shape(x, y);
-  if (crabRaveMode === 0) {
-  } else if (crabRaveMode === 1) {
-    RGB = [rando] + random(10, 100);
-    G += random(10, 100);
-    B += random(10, 100);
-    background(R, G, B);
-    shape(x, y);
-  }
 }
