@@ -38,7 +38,7 @@ function raveTime() {
   if (mouseIsPressed) {
     mouseIsPressed = false;
     if (crabRaveMode === 0) {
-      crabRave.play();
+      crabRave.play(29);
       crabRaveMode = 1;
       print("crab time");
       img = loadImage("assets/Crab.png");
