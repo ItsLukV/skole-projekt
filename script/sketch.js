@@ -4,6 +4,7 @@ let crabRaveMode = 0;
 
 function preload() {
   crabRave = loadSound("assets/CrabRave.mp3");
+  img = loadImage("assets/Carrot.png");
   x = random(101, windowWidth - 101);
   y = random(101, windowHeight - 101);
   canvas_x = windowWidth;
@@ -12,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  img = loadImage("assets/Carrot.png");
+  angleMode(DEGREES);
   createCanvas(canvas_x, canvas_y);
   frameRate(50);
   console.log("ready");

@@ -6,6 +6,8 @@ var R = 50;
 var G = 0;
 var B = 0;
 
+var D = 0;
+
 function colorShift() {
   if (crabRaveMode == 1) {
     //red
@@ -29,5 +31,21 @@ function colorShift() {
       B = 0;
     }
     background(R, G, B);
+    cText();
   }
+}
+
+function cText() {
+  if (D > 360) {
+    D = 0;
+  }
+  push();
+  fill(random(0, 255), random(0, 255), random(0, 255));
+  translate(windowWidth / 2, windowHeight / 2);
+  textSize(100);
+  rotate(1 + D);
+  text("Crabrave", 0, 0);
+  pop();
+  D += 1;
+  console.log("test");
 }
