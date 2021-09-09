@@ -12,5 +12,5 @@ function eight(){
             cornerCount += 1
         break
     }
-    text(cornerCount, 5, 5)
+    text(cornerCount, 5, 15)
 }
