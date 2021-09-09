@@ -25,6 +25,7 @@ function draw() {
   raveTime();
   easterTime();
   eight()
+  windowSize()
 }
 
 function sketch() {
