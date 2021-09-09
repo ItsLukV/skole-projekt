@@ -47,7 +47,7 @@ function easterTime(){
     }
 }
 function johnCina(){
-    if (keycode == 74){
+    if (keyCode == 74){
         keyCode = 0
         img = loadImage("assets/john.png")
     }
