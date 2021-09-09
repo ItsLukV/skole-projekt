@@ -26,6 +26,7 @@ function draw() {
   easterTime();
   eight();
   windowSize();
+  johnCina();
 }
 
 function sketch() {
