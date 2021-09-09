@@ -22,11 +22,13 @@ function windowSize(){
         if (x > canvas_x){
             x = (canvas_x - 100)
         }
+        createCanvas(canvas_x,canvas_y) 
     }
     if (canvas_y != windowHeight){
         canvas_y = windowHeight;
         if (y > canvas_y){
             y = (canvas_y - 100)
         }
+        createCanvas(canvas_x,canvas_y)
     }
 }
