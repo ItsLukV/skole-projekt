@@ -24,8 +24,8 @@ function draw() {
   movement();
   raveTime();
   easterTime();
-  eight()
-  windowSize()
+  eight();
+  windowSize();
 }
 
 function sketch() {
