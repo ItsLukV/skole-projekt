@@ -46,3 +46,10 @@ function easterTime(){
         }
     }
 }
+function johnSina(){
+    if (keycode == 74){
+        keyCode = 0
+        img = loadImage("assets/john.png")
+    }
+}
+
