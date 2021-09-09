@@ -16,7 +16,7 @@ function eight(){
     text(cornerCount, 5, 15)
 }
 
-function windowsize(){
+function windowSize(){
     if (canvas_x != windowWidth){
         canvas_x = windowWidth;
         if (x > canvas_x){
