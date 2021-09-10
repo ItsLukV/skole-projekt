@@ -62,11 +62,13 @@ function moveStyleChange(){
   switch (keyCode){
     case 90:
       movementControll = "manual"
+      keyCode = 0
     break
     case 88:
       movementControll = "auto"
       xx = 1
       yy = 1
+      keyCode = 0
     break
   }
 }
