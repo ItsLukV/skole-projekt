@@ -2,7 +2,6 @@ var x;
 var y;
 var xx = 1;
 var yy = 1;
-
 function movement() {
   //moving down
   if (x + xx < 0) {

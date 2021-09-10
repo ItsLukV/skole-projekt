@@ -1,13 +1,7 @@
-var RR = 0;
-var GG = 0;
-var BB = 0;
-
 var R = 50;
 var G = 0;
 var B = 0;
-
 var D = 0;
-
 function colorShift() {
   if (crabRaveMode == 1) {
     //red
@@ -16,14 +10,12 @@ function colorShift() {
     } else if (R > 255) {
       R = 0;
     }
-
     //green
     if (G < 255) {
       G += random(0, 15);
     } else if (G > 255) {
       G = 0;
     }
-
     //blue
     if (B < 255) {
       B += random(0, 20);
@@ -34,7 +26,6 @@ function colorShift() {
     cText();
   }
 }
-
 function cText() {
   if (D > 360) {
     D = 0;

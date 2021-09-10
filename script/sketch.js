@@ -37,11 +37,9 @@ function draw() {
 function sketch() {
   print("gaming");
 }
-
 function shape(x, y) {
   image(img, x, y, 100, 100);
 }
-
 function raveTime() {
   if (mouseIsPressed) {
     mouseIsPressed = false;

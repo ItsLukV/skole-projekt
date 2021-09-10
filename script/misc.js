@@ -1,5 +1,4 @@
 var cornerCount = 0
-
 function eight(){
     switch(x){
         case x > canvas_x-2:
@@ -15,7 +14,6 @@ function eight(){
     }
     text(cornerCount, 5, 15)
 }
-
 function windowSize(){
     if (canvas_x != windowWidth){
         canvas_x = windowWidth;

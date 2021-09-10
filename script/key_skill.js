@@ -52,4 +52,3 @@ function johnCina(){
         img = loadImage("assets/john.png")
     }
 }
-
