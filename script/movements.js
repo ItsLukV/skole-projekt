@@ -30,4 +30,23 @@ function movement() {
   colorShift();
   shape(x, y);
 }
-manualMove(){}
+manualMove(){
+  switch(keyCode){
+    case 39:
+    case 68:
+      xx += 1
+    break
+    case 37:
+    case 65:
+      xx -= 1
+    break
+    case 38:
+    case 87:
+      yy -=1
+    break
+    case: 40:
+    case 83:
+      yy += 1
+    break
+  } 
+}
