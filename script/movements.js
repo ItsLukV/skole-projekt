@@ -30,7 +30,7 @@ function movement() {
   colorShift();
   shape(x, y);
 }
-manualMove(){
+function manualMove(){
   switch(keyCode){
     case 39:
     case 68:
