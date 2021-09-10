@@ -23,11 +23,9 @@ function setup() {
 function draw() {
   background(0);
   moveStyleChange()
-  if (movementControll === "auto"){
-    movement();
-  } else if (movementControll === "manual"){
+  if (movementControll === "manual"){
     manualMove()
-  } else { 
+  }
   print (error)
   text ("error, move", 55, 55)
   }
