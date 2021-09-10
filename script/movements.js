@@ -44,7 +44,7 @@ function manualMove() {
     case 87:
       yy -=1
     break
-    case: 40:
+    case 40:
     case 83:
       yy += 1
     break
