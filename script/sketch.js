@@ -22,10 +22,14 @@ function setup() {
 
 function draw() {
   background(0);
+  moveStyleChange()
   if (movementControll === "auto"){
     movement();
-  } else {
+  } else if (movementControll === "manual"){
     manualMove()
+  } else { 
+  print (error)
+  text ("error, move", 55, 55)
   }
   raveTime();
   easterTime();
@@ -58,3 +62,13 @@ function raveTime() {
     }
   }
 }
+function moveStyleChange(){
+  switch (keyCode){
+    case 90:
+      movementControll = "manual"
+    break
+    case 88:
+      movementControll = "auto"
+    break
+  }
+  
