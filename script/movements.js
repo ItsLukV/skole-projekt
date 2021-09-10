@@ -30,3 +30,4 @@ function movement() {
   colorShift();
   shape(x, y);
 }
+manualMove(){}
