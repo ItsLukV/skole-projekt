@@ -1,6 +1,7 @@
 let canvas_x;
 let canvas_y;
 let crabRaveMode = 0;
+let movementControll = "auto"
 
 function preload() {
   crabRave = loadSound("assets/CrabRave.mp3");
@@ -21,7 +22,11 @@ function setup() {
 
 function draw() {
   background(0);
-  movement();
+  if (movementControll === "auto"){
+    movement();
+  } else {
+    manualMove()
+  }
   raveTime();
   easterTime();
   eight();
