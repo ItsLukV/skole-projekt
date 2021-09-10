@@ -1,4 +1,7 @@
-var cornerCount = 0
+//Lavet af
+//David, Lukas og Malthe
+//Fra 2.M
+ cornerCount = 0
 function eight(){
     switch(x){
         case x > canvas_x-2:

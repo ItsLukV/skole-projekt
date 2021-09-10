@@ -1,3 +1,6 @@
+//Lavet af
+//David, Lukas og Malthe
+//Fra 2.M
 var R = 50;
 var G = 0;
 var B = 0;

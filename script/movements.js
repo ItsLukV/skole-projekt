@@ -1,3 +1,6 @@
+//Lavet af
+//David, Lukas og Malthe
+//Fra 2.M
 var x;
 var y;
 var xx = 1;

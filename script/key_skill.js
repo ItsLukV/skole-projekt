@@ -1,3 +1,6 @@
+//Lavet af
+//David, Lukas og Malthe
+//Fra 2.M
 var keyS = 0
 function easterTime(){
     if(keyIsPressed === true){

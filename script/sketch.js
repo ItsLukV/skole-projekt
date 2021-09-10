@@ -1,3 +1,6 @@
+//Lavet af
+//David, Lukas og Malthe
+//Fra 2.M
 let canvas_x;
 let canvas_y;
 let crabRaveMode = 0;
