@@ -26,9 +26,7 @@ function draw() {
   if (movementControll === "manual"){
     manualMove()
   }
-  print (error)
-  text ("error, move", 55, 55)
-  }
+  movement()
   raveTime();
   easterTime();
   eight();
@@ -67,6 +65,8 @@ function moveStyleChange(){
     break
     case 88:
       movementControll = "auto"
+      xx = 1
+      yy = 1
     break
   }
 }
