@@ -9,6 +9,7 @@ let movementControll = "auto"
 function preload() {
   crabRave = loadSound("assets/CrabRave.mp3");
   img = loadImage("assets/Carrot.png");
+  vision = "carrot"
   x = random(101, windowWidth - 101);
   y = random(101, windowHeight - 101);
   canvas_x = windowWidth;
@@ -24,12 +25,21 @@ function setup() {
 }
 
 function draw() {
+  if(vision == "john"){
+    johnyTime = true
+  }else {
+    johnyTime = false
+  }
   background(0);
   moveStyleChange()
   if (movementControll === "manual"){
     manualMove()
   }
-  movement()
+  if(johnyTime == true){
+    johny()
+  } else {
+    movement()
+  } 
   raveTime();
   easterTime();
   eight();
@@ -51,10 +61,12 @@ function raveTime() {
       crabRaveMode = 1;
       print("crab time");
       img = loadImage("assets/Crab.png");
+      vision = "crab"
     } else if (crabRaveMode === 1) {
       crabRaveMode = 0;
       print("crab end");
       img = loadImage("assets/Carrot.png");
+      vision = "carrot"
       crabRave.pause();
     }
   }

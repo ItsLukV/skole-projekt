@@ -2,6 +2,7 @@
 //David, Lukas og Malthe
 //Fra 2.M
 var keyS = 0
+var johnyTime = false
 function easterTime(){
     if(keyIsPressed === true){
         switch(keyS){
@@ -42,6 +43,7 @@ function easterTime(){
                keyS=0
                keyCode=0
                img=loadImage("assets/egg.png")
+               vision = "easter"
                print("easter time")
            }else if(keyCode==0){}else{
            keyS = 0
@@ -53,5 +55,6 @@ function johnCina(){
     if (keyCode == 74){
         keyCode = 0
         img = loadImage("assets/john.png")
+        vision = "john"
     }
 }
