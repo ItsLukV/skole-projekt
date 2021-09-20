@@ -45,6 +45,7 @@ function draw() {
   eight();
   windowSize();
   johnCina();
+  quake()
 }
 
 function sketch() {
