@@ -83,6 +83,7 @@ function johny(){
     y += yy;
   }
   background(x + 50 * (255 / canvas_x), y + 50 * (255 / canvas_y), 0);
+  colorShift();
   shapeT(x, y);
 }
 function colorT(x,y){
