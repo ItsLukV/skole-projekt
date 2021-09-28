@@ -1,6 +1,8 @@
 //Lavet af
 //David, Lukas og Malthe
 //Fra 2.M
+
+//random easter egg *shrug*
 function quake() {
 var quak = false
     if(keyCode == 81){

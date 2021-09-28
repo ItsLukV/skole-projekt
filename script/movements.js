@@ -8,6 +8,8 @@ var x;
 var y;
 var xx = 1;
 var yy = 1;
+
+//standard movement
 function movement() {
   //moving down
   if (x + xx < 0) {
@@ -31,10 +33,13 @@ function movement() {
   } else {
     y += yy;
   }
+  //setting background passed on possition
   background(x + 50 * (255 / canvas_x), y + 50 * (255 / canvas_y), 0);
   colorShift();
   shape(x, y);
 }
+
+//standard manual movement 
 function manualMove() {
   switch(keyCode) {
     case 39:
@@ -60,6 +65,7 @@ function manualMove() {
   } 
 }
 
+//the original version of manual move
 function manualMoveOriginal() {
   switch(keyCode) {
     case 39:
@@ -81,6 +87,7 @@ function manualMoveOriginal() {
   } 
 }
 
+//allows the john cena picture to change color on edges
 function johny(){
     //moving down
   if (x + xx < 0) {
@@ -109,15 +116,19 @@ function johny(){
     y += yy;
   }
   background(x + 50 * (255 / canvas_x), y + 50 * (255 / canvas_y), 0);
+  //allows crab rave colors during john cena
   colorShift();
   shapeT(x, y);
 }
+//chooses color of john cena
 function colorT(x,y){
   noStroke()
   RT = random(0, 255)
   GT = random(0, 255)
   BT = random(0, 255)
 }
+
+//places color on john cena
 function shapeT (x,y){
   image(img, x, y, 100, 100);
   fill(RT,GT,BT,125)
