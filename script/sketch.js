@@ -25,6 +25,7 @@ function setup() {
 }
 
 function draw() {
+  Text("1.0-Pre-0.1.1",windowWidth,windowHeight)
   if(vision == "john"){
     johnyTime = true
   }else {
