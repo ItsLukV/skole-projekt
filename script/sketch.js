@@ -34,6 +34,8 @@ function draw() {
   moveStyleChange()
   if (movementControll === "manual"){
     manualMove()
+  } else if (movementControll === "manualOriginal"){
+    manualMoveOriginal()
   }
   if(johnyTime == true){
     johny()
@@ -84,5 +86,7 @@ function moveStyleChange(){
       yy = 1
       keyCode = 0
     break
+    case 67:
+      movementControll = "manualOriginal"
   }
 }
