@@ -3,6 +3,7 @@
 //Fra 2.M
 var keyS = 0
 var johnyTime = false
+var easter = false
 function easterTime(){
     if(keyIsPressed === true){
         switch(keyS){
