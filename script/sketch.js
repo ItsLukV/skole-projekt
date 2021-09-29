@@ -126,20 +126,23 @@ function raveTime() {
   }
 }
 
-
+//chooses the which form of movement i used
 function moveStyleChange(){
+  
+  //chooses based on which key is pressed
   switch (keyCode){
-    case 90:
+    case 90: //sets manual move
       movementControll = "manual"
       keyCode = 0
     break
-    case 88:
+    case 88: //sets normal (auto move)
       movementControll = "auto"
       xx = 1
       yy = 1
       keyCode = 0
     break
-    case 67:
+    case 67: //chooses old version of manual
       movementControll = "manualOriginal"
-  }
+      break
+    }
 }
