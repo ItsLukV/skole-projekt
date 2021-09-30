@@ -56,9 +56,15 @@ function easterTime(){
         }
     }
 }
+
+//activates john cina 
 function johnCina(){
+
+    // checks if j is pressed
     if (keyCode == 74){
         keyCode = 0
+        
+        // loads the new image and sets vision tho "john" meaning the active movement funktion changes
         img = loadImage("assets/john.png")
         vision = "john"
     }

@@ -68,19 +68,19 @@ function manualMove() {
 //the original version of manual move
 function manualMoveOriginal() {
   switch(keyCode) {
-    case 39:
+    case 39: //D or right arrow
     case 68:
       xx += 1
     break
-    case 37:
+    case 37: //A or left arrow
     case 65:
       xx -= 1
     break
-    case 38:
+    case 38: // W or up arrow
     case 87:
       yy -=1
     break
-    case 40:
+    case 40: //S or down arrow
     case 83:
       yy += 1
     break
